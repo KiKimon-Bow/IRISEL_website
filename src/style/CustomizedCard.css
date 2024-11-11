@@ -1,0 +1,103 @@
+
+.CustomizedCard {
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    border-radius: 3%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.CustomizedCricle {
+    border-radius: 5%;
+    width: 10rem; ;
+    height: 10rem;
+    text-align: center;
+    align-items: center;
+    border: #ebd8b8 4px solid;
+}
+
+
+.CustomizedCard:hover .CustomizedCricle{
+    transform: scale(0.9);
+    border: #ebd8b8 4px solid;
+}
+
+
+
+@keyframes CustomizedCricle {
+    0% {
+        transform: scale3d(1, 1, 1)
+    }
+
+    30% {
+        transform: scale3d(1.25, .75, 1)
+    }
+
+    40% {
+        transform: scale3d(.75, 1.25, 1)
+    }
+
+    50% {
+        transform: scale3d(1.15, .85, 1)
+    }
+
+    65% {
+        transform: scale3d(.95, 1.05, 1)
+    }
+
+    75% {
+        transform: scale3d(1.05, .95, 1)
+    }
+
+    100% {
+        transform: scale3d(1, 1, 1)
+    }
+}
+
+.CustomizedSwitchTag {
+    width: 90%;
+    height: 25%;
+    background: #4d4b4a;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+    text-align: center;
+    display: flex;
+    writing-mode: vertical-rl;
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 35px;
+}
+
+.CustomizedSwitchTag:hover {
+    border: #ebd8b8 4px solid;
+    cursor: pointer;
+}
+.CustomizedSwitchTag.selected {
+    background-color: #2c2c22;
+    color: #ebd8b8;
+    height: 40%;
+}
+
+.CustomizedSwitchTag.unselected {
+    margin-left: auto;
+    background-color: rgba(180, 180, 180, 0.705);
+    color: #dbab56;
+    /* height: 25%; */
+}
+
+.CustomizedCricleText{
+    font-size: 38px;
+    font-weight: Heavy;
+    color: rgb(104, 74, 30);
+    display: inline-flex;
+    align-items: center;
+    margin-top: 3rem;
+    font-family: "Noto Sans TC", sans-serif;
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.664);
+    font-weight: bold;
+}
